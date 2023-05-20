@@ -111,11 +111,7 @@ section {
 }
 
 body {
-    line-height: 1;
-    border: 1px solid #dbdbdb;
-    ::-webkit-scrollbar {
-    display: none;
-    }
+    background-color: #fb6b6b;
 }
 
 ol,
@@ -144,7 +140,6 @@ table {
 * {
   width: 100%;
   box-sizing: border-box;
-  background-color: #fb6b6b;
 }
 `
 

@@ -1,14 +1,15 @@
-import React from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 
 export default function Top() {
 
     return (
+    <>
         <ContainerTop>
             <Image src={logo} alt={logo} />
             <Title>ZapRecall</Title>
         </ContainerTop>
+    </>
     );
 }
 
@@ -17,11 +18,12 @@ const ContainerTop = styled.div`
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    bottom: auto;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 `;
 
 const Image = styled.img`  
