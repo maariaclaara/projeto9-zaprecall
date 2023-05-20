@@ -17,8 +17,8 @@ const ContainerTop = styled.div`
     width: 100%;
     position: fixed;
     top: 0;
-    bottom: auto;
-    z-index: 1;
+    left: 0;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;

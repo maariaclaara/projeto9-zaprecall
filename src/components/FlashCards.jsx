@@ -13,9 +13,10 @@ export default function App() {
 };
 
 const ContainerCards = styled.div `
-    height: 695px;
+    height: 804px;
     width: 100%;
     background-color: black;
+    margin-top: 153px;
 `;
 
 
