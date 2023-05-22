@@ -132,6 +132,15 @@ const ClosedLetter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   h2 {
     background-color: #ffffff;
     margin-left: 10px;
@@ -142,6 +151,7 @@ const ClosedLetter = styled.div`
     color: #333333;
     margin-right: 20px;
   }
+
   img {
     color: #333333;
     margin-right: 19px;
@@ -249,6 +259,15 @@ const FinishedAnswer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   h2 {
     background-color: #ffffff;
     margin-left: 10px;
@@ -259,6 +278,7 @@ const FinishedAnswer = styled.div`
     color: ${(props) => props.color};
     cursor: default;
   }
+
   img {
     color: #333333;
     margin-right: 19px;
