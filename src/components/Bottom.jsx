@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-/*import Response from "./Response";*/
 
-export default function Bottom({count}) {
+
+export default function Bottom({ counter }) {
 
     return (
     <ContainerCount>
-        <Concluded> {count}/4 CONCLUÍDOS </Concluded>
+        <Divcounter>
+            <Concluded data-test="footer"> {counter}/8 CONCLUÍDOS </Concluded>
+        </Divcounter>
     </ContainerCount>
     );
 }
@@ -21,17 +23,23 @@ const ContainerCount = styled.div `
     align-items: center;
     position: fixed;
     bottom: 0;
-    left: 0;
+    top: auto;
     z-index: 2;
 `;
 
-const Concluded = styled.h1 `
-    background-color: #FFFFFF;
-    width: 145px;
+const Divcounter = styled.div `
+    width: 200px;
     height: 22px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const Concluded = styled.h1 `
     font-family: 'Recursive';
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #333333;
+    color: #333333; 
 `;

@@ -14,16 +14,16 @@ export default function Top() {
 }
 
 const ContainerTop = styled.div`
+    background-color: #fb6b6b;
     height: 153px;
     width: 100%;
     position: fixed;
     top: 0;
     bottom: auto;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
 `;
 
 const Image = styled.img`  

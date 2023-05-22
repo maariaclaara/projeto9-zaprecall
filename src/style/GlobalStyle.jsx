@@ -112,6 +112,9 @@ section {
 
 body {
     background-color: #fb6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ol,

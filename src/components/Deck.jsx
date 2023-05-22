@@ -1,4 +1,10 @@
-const cards = [
+import React from "react";
+import Flashcards from "./FlashCards";
+import styled from "styled-components";
+
+export default function QuestionsCards({ counter, setCounter }) {
+
+	const cards = [
 	{ question: "O que é JSX?", answer: "Uma extensão da linguagem JavaScript" },
 	{ question: "O React é __", answer: "Uma biblioteca JavaScript para construção de interfaces" },
 	{ question: "Componentes devem iniciar com __", answer: "Letra maiúscula" },
@@ -9,4 +15,26 @@ const cards = [
 	{ question: "Usamos estado (state) para __", answer: "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" }
 ]
 
-export default cards;
+return (
+    <DivCards>
+      {cards.map((card, i) => (
+        <Flashcards 
+          key={i}
+          i={i + 1}
+          question={card.question}
+          answer={card.answer}
+          counter={counter}
+          setCounter={setCounter}
+        />
+      ))}
+    </DivCards>
+  );
+}
+
+const DivCards = styled.div`
+  margin-top: 153px;
+  margin-bottom: 109px;
+`;
+
+
+
