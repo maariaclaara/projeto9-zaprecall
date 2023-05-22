@@ -7,7 +7,7 @@ export default function Home({ zapRecall }) {
     <ContainerHome>
       <ImageHome src={logo} alt={logo} />
       <TitleHome>ZapRecall</TitleHome>
-      <Button onClick={() => zapRecall()}>Iniciar Recall!</Button>
+      <Button data-test="start-btn" onClick={() => zapRecall()}>Iniciar Recall!</Button>
     </ContainerHome>
   );
 }
