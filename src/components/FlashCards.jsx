@@ -50,7 +50,8 @@ export default function FlashCards({ i, question, answer, counter, setCounter })
   return (
     <>
       {openLetter && (
-        <ClosedLetter data-test="flashcard">
+        <ClosedLetter>
+          <div data-test="flashcard">
           <h2 data-test="flashcard-text">PERGUNTA {i}</h2>
           <img
             data-test="play-btn"
@@ -58,11 +59,13 @@ export default function FlashCards({ i, question, answer, counter, setCounter })
             alt={arrowPlay}
             onClick={() => seeQuestion()}
           ></img>
+          </div>
         </ClosedLetter>
       )}
 
       {openQuestion && (
-        <SeeQuestion data-test="flashcard">
+        <SeeQuestion>
+          <div data-test="flashcard">
           <h2 data-test="flashcard-text">{question}</h2>
           <img
             data-test="turn-btn"
@@ -70,11 +73,13 @@ export default function FlashCards({ i, question, answer, counter, setCounter })
             alt={arrowTurn}
             onClick={() => seeResponse()}
           />
+          </div>
         </SeeQuestion>
       )}
 
       {openResponse && (
-        <SeeResponse data-test="flashcard">
+        <SeeResponse>
+          <div data-test="flashcard">
           <h2 data-test="flashcard-text">{answer}</h2>
           <DivButtons>
             <Button
@@ -99,13 +104,16 @@ export default function FlashCards({ i, question, answer, counter, setCounter })
               Zap!
             </Button>
           </DivButtons>
+          </div>
         </SeeResponse>
       )}
 
       {openFinish && (
-        <FinishedAnswer data-test="flashcard" color={color}>
+        <FinishedAnswer color={color}>
+          <div data-test="flashcard">
           <h2 data-test="flashcard-text">PERGUNTA {i}</h2>
           <img data-test={dataTest} src={iconPlay} alt={iconPlay} />
+          </div>
         </FinishedAnswer>
       )}
     </>
